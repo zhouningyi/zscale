@@ -1,0 +1,23 @@
+{
+  "name": "zscale",
+  "version": "1.0.0",
+  "description": "可视化映射配置化",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.zhonganonline.com/coms/zscale.git"
+  },
+  "keywords": [
+    "d3-scale",
+    "visualmap"
+  ],
+  "author": "zhouningyi",
+  "license": "MIT",
+  "dependencies": {
+    "bcore": "^0.0.21",
+    "d3-scale": "^1.0.4"
+  }
+}
