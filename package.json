@@ -1,6 +1,6 @@
 {
   "name": "zscale",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "可视化映射配置化",
   "main": "index.js",
   "scripts": {

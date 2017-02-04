@@ -10,7 +10,7 @@ const funcs = {
 };
 
 const getFunc = (o) => {
-	const type = o.easing || o.scale;
+	const type = o.easing || o.scale || 'linear';
 	if(!type) return console.log(o, 'easing参数不存在');
 	const func = funcs[type]
 	if(!func) return console.log(o, '函数不存在');
