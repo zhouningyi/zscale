@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fs = require('fs');
 var path = require('path');
 var cp = require('child_process');
@@ -18,13 +19,13 @@ function writeFile(pth, json) {
 
 let name;
 function updatePkg() {
-	var packageUrl = path.join(__dirname, './../package.json');
-	var package = fs.readFileSync(packageUrl);
-	package = JSON.parse(package);
-	name = package.name;
+	var pkgUrl = path.join(__dirname, './../package.json');
+	var pkg = fs.readFileSync(pkgUrl);
+	pkg = JSON.parse(pkg);
+	name = pkg.name;
 
-	package.version = verionPlus(package.version);
-	writeFile(packageUrl, package);
+	pkg.version = verionPlus(pkg.version);
+	writeFile(pkgUrl, pkg);
 	console.log('package.json已更新, 开始发布...');
 }
 

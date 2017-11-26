@@ -1,0 +1,17 @@
+{
+  "presets": ["es2015", "stage-0", "stage-1", "stage-2", "stage-3"],
+  "plugins": [
+    ["transform-replace-object-assign", "simple-assign"]
+  ],
+  "env": {
+    "docs-production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-constant-elements",
+        "transform-react-inline-elements",
+        ["transform-replace-object-assign", "simple-assign"]
+      ]
+    }
+  }
+}
+

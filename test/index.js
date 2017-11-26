@@ -39,7 +39,9 @@ const input = 1.1;
 },{
 	name: '对数',
 	type: 'log'
-}].forEach(d => test(d.name, getSchema(d.type), input))
+}].forEach(
+	d => test(d.name, getSchema(d.type), input)
+);
 
 
 
