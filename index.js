@@ -8,10 +8,10 @@ const funcs = { gradient };
 
 const getFunc = name => funcs[name];
 
-const generate = d => {
+const generate = (d) => {
   const { type, value } = d;
   const func = funcs[type];
   return func.generate(value);
 };
 
-module.exports = {generate, funcs};
+module.exports = { generate, funcs };
